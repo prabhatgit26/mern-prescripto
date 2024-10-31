@@ -43,7 +43,7 @@ const Navbar = () => {
                         <p onClick={()=>setToken(false)} className='hover:text-blue-600 cursor-pointer'>Logout</p>
                     </div>
                 </div>
-            </div> : <button onClick={()=>navigate('/login')} className='bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-light hidden md:block' type='submit'>Create account</button>
+            </div> : <button onClick={()=>navigate('/login')} className='bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full hidden md:block font-semibold' type='submit'>Create account</button>
         }
         
       </div>
