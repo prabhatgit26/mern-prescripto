@@ -24,19 +24,19 @@ Top Doctors :
 
 
 
-All Doctors :
+All the Doctors :
 
 ![press5](https://github.com/user-attachments/assets/d15f93da-21ba-445a-8efc-4ac3403979ec)
 
 
-Doctor speciality :
+Doctor's Speciality :
 
 ![pres6](https://github.com/user-attachments/assets/b6adbe2e-7eba-463f-bdc5-dedbda68872d)
 
 ![pres7](https://github.com/user-attachments/assets/45d5bb76-ea7d-4d9c-b248-5d5828b23e16)
 
 
-Doctor's Profile / Appointment Page :
+Doctor's Profile / Booking an Appointment Page :
 
 ![pres10](https://github.com/user-attachments/assets/0b7ad93d-b974-4944-8777-d30d2245632a)
 
@@ -45,7 +45,7 @@ Related Doctors :
 ![pres11](https://github.com/user-attachments/assets/1b8481d5-3cf3-4971-9c65-18158f60c9cd)
 
 
-My Appointments Page:
+User's Appointments Page:
 
 ![pres12](https://github.com/user-attachments/assets/b820285b-efc8-4426-9085-22a4462fb629)
 
@@ -64,7 +64,7 @@ User Login Page :
 
 
 
-User Profile Page :
+User's Profile Page :
 
 ![pres13](https://github.com/user-attachments/assets/8fcdcdee-c9a7-4a02-a35b-75080e860e26)
 
