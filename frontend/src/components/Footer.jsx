@@ -18,7 +18,7 @@ const Footer = () => {
 
         {/* ------ Center Section ------ */}
         <div>
-            <p className='text-xl font-medium mb-5'>COMPANY</p>
+            <p className='text-xl font-medium mb-5'>EXPLORE US</p>
             <ul className='flex flex-col gap-2 text-gray-600'>
                 <li>Home</li>
                 <li>About us</li>
@@ -29,10 +29,11 @@ const Footer = () => {
 
         {/* ------ Right Section ------ */}
         <div>
-            <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
-            <ul className='flex flex-col gap-2 text-gray-600'>
-                <li>+91-251-8505-88</li>
-                <li>prescripto@support.com</li>
+            <p className='text-xl font-medium mb-5'>GET HELP</p>
+            <ul className='flex flex-col gap-2 text-gray-600 cursor-pointer'>
+                <li>📞+91-251-850-88</li>
+                <li>📠+91-251-8505-99</li>
+                <li>✉️ prescripto@support.com</li>
             </ul>
         </div>
       </div>

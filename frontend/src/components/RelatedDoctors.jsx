@@ -34,7 +34,7 @@ const RelatedDoctors = ({docId, speciality}) => {
                 </div>
             ))}
         </div>
-        <button onClick={()=>{ navigate('/doctors'); scrollTo(0,0) }} className='bg-blue-100 hover:bg-blue-200 text-gray-600 px-12 py-3 rounded-full mt-10'>more</button>
+        <button onClick={()=>{ navigate('/doctors'); scrollTo(0,0) }} className='bg-blue-200 hover:bg-primary hover:text-white text-gray-600 px-10 py-2 rounded-full mt-10 transition-all duration-500'>Discover All Doctors</button>
     </div>
   )
 }

@@ -136,11 +136,11 @@ const Appointment = () => {
         <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4'>
           {
             docSlots.length && docSlots[slotIndex].map((item, index)=>(
-              <p onClick={()=>setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 cursor-pointer rounded-full ${item.time === slotTime ? 'bg-primary text-white' : 'text-gray-400 border border-gray-300' }`} key={index}>{item.time.toLowerCase()}</p>
+              <p onClick={()=>setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 cursor-pointer rounded-full ${item.time === slotTime ? 'bg-primary text-white' : 'text-gray-400 border border-gray-300 hover:bg-blue-50' }`} key={index}>{item.time.toLowerCase()}</p>
             ))
           }
         </div>
-        <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6'>Book an Appointment</button>
+        <button className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6 hover:bg-blue-600 transition-all duration-300'>Book an Appointment</button>
       </div>
 
       {/*--------- Listing Related Doctors ---------- */}
