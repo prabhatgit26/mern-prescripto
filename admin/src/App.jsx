@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Login from './pages/Login';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AdminContext } from './context/AdminContext';
 import Navbar from './components/Navbar';
@@ -17,7 +17,7 @@ const App = () => {
 
   return aToken ? (
     <div className='bg-[#F8F9FD]'>
-      <ToastContainer/>
+      <ToastContainer position="top-center" hideProgressBar={true} newestOnTop={true} autoClose={2000} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Zoom} />
       <Navbar />
       <div className='flex items-start'>
         <Sidebar />

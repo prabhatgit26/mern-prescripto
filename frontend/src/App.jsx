@@ -10,11 +10,13 @@ import MyAppointments from './pages/MyAppointments';
 import Appointment from './pages/Appointment';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Bounce, ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      
+      <ToastContainer position="top-center" hideProgressBar={false} newestOnTop={false} autoClose={2000} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Zoom} />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />

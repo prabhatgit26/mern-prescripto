@@ -3,7 +3,7 @@ import React from 'react'
 const AllApointments = () => {
   return (
     <div>
-      <h1 className='text-[110px] text-gray-500 font-semibold ml-[150px]'>Apointments Home</h1>
+      <h1 className='text-[110px] text-gray-500 font-semibold ml-[150px] hover:bg-gray-500 hover:text-white transition-all duration-1000'>Apointments Home</h1>
       <hr className='text-[110px] text-purple-600 font-semibold ml-[150px]' />
     </div>
   )
