@@ -148,24 +148,23 @@ const Appointment = () => {
 
         <div className='flex-1 border border-gray-400 rounded-lg p-8 py-7 bg-white mx-2 sm:mx-0 sm:mt-0'>
           {/* ------- Doctor info : name, degree, experience  ------- */}
-          <p className='flex items-center gap-2 text-2xl font-medium text-gray-900'>
+          <p className='flex items-center gap-2 text-4xl font-extrabold text-blue-800 tracking-wide '>
             {docInfo.name} 
-            <img className='w-5' src={assets.verified_icon} alt="" />
+            <img className='w-8 m-1 hover:scale-110 transition-all duration-700' src={assets.verified_icon} alt="" />
           </p>
-          <div className='flex items-center gap-2 text-sm mt-1 text-gray-600'>
-            <p>{docInfo.degree} - {docInfo.speciality}</p>
-            <button className='py-0.5 px-2 border text-xs rounded-full  hover:bg-blue-200'>{docInfo.experience}</button>
+          <div className='flex items-center mt-2 gap-2 text-gray-600'>
+            <p className="text-lg font-medium text-gray-700" >{docInfo.degree} - {docInfo.speciality}</p>
+            <button className="px-3 py-1 text-xs font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-md">{docInfo.experience}</button>
           </div>
 
         {/* ------- Doctor details  ------- */}
-        <div>
-          <p className='flex items-center gap-1 text-sm font-medium text-gray-900 mt-3'>
-            About 
+        <div className='mt-5'>
+        <h3 className="flex gap-2 text-lg font-semibold text-blue-700 mb-2">About
             <img src={assets.info_icon} alt="" />
-          </p>
+        </h3>
           <p className='text-sm text-gray-500 max-w-[700px] mt-1'>{docInfo.about}</p>
         </div>
-        <p className='text-gray-500 font-medium mt-4 border border-gray-200 w-[180px] pl-1 rounded-sm hover:bg-blue-200 cursor-pointer'>
+        <p className='text-blue-700 font-semibold text-lg mt-4 cursor-pointer'>
           Appointment Fee : <span className='text-gray-600'>{currencySymbol} {docInfo.fees}</span>
         </p>
         </div>
@@ -177,7 +176,7 @@ const Appointment = () => {
         <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
           {
             docSlots.length && docSlots.map((item, index)=>(
-              <div onClick={()=> setSlotIndex(index)} className={`text-center py-6 min-w-16 rounded-full cursor-pointer hover:border-gray-500 ${slotIndex === index ? 'bg-primary text-white' : 'border border-gray-200'}`} key={index}>
+              <div onClick={()=> setSlotIndex(index)} className={`text-center py-6 min-w-16 rounded-full cursor-pointer hover:border-gray-500 ${slotIndex === index ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white' : 'border border-gray-200'}`} key={index}>
                 <p>{item[0] && daysOfWeek[item[0].dateTime.getDay()]}</p>
                 <p>{item[0] && item[0].dateTime.getDate()}</p>
               </div>
@@ -188,11 +187,11 @@ const Appointment = () => {
         <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4'>
           {
             docSlots.length && docSlots[slotIndex].map((item, index)=>(
-              <p onClick={()=>setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 cursor-pointer rounded-full hover:border-gray-500 ${item.time === slotTime ? 'bg-primary text-white' : 'text-gray-400 border border-gray-300' }`} key={index}>{item.time.toLowerCase()}</p>
+              <p onClick={()=>setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 cursor-pointer rounded-full hover:border-gray-500 ${item.time === slotTime ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white' : 'text-gray-400 border border-gray-300' }`} key={index}>{item.time.toLowerCase()}</p>
             ))
           }
         </div>
-        <button onClick={bookAppointment} className='bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6 hover:bg-blue-600 transition-all duration-300'>Book an Appointment</button>
+        <button onClick={bookAppointment} className="w-[200px] mt-8 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-full shadow-lg hover:from-blue-500 hover:to-blue-700 transform transition hover:scale-105 duration-700 px-2 py-2">Book an Appointment</button>
       </div>
 
       {/*--------- Listing Related Doctors ---------- */}

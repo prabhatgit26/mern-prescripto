@@ -31,9 +31,10 @@ const Footer = () => {
         <div>
             <p className='text-xl font-medium mb-5'>GET HELP</p>
             <ul className='flex flex-col gap-2 text-gray-600 cursor-pointer'>
-                <li>📞+91-251-850-88</li>
-                <li>📠+91-251-8505-99</li>
-                <li>✉️ prescripto@support.com</li>
+                <li className='hover:text-blue-500 hover:scale-105 transition-all duration-1000'>📞+91-251-850-88</li>
+                <li className='hover:text-blue-500 hover:scale-105 transition-all duration-1000'>📠+91-251-8505-99</li>
+                <li className='hover:text-blue-500 hover:scale-105 transition-all duration-1000'>✉️ prescripto@support.com</li>
+                <li className='hover:text-blue-500 hover:scale-105 transition-all duration-1000'><span className='text-lg text-blue-500'>ⓘ</span> Learn more about us.</li>
             </ul>
         </div>
       </div>

@@ -16,6 +16,17 @@
     @apply hidden
 }
 
+
+
+/* You can add this in your CSS file, or inline with Tailwind classes in the JSX */
+
+  
+
+
+
+
+
+
 @media (max-width:740px){
     .active p{
         @apply text-white bg-primary

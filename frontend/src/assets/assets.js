@@ -11,6 +11,16 @@ import menu_icon from './menu_icon.svg'
 import cross_icon from './cross_icon.png'
 import chats_icon from './chats_icon.svg'
 import verified_icon from './verified_icon.svg'
+import banking from './banking.svg'
+import thumb from './thumb.svg'
+import cancel from './cancel.svg'
+import cancelled from './cancelled.svg'
+import cancelledd from './cancelledd.svg'
+import approve from './approve.svg'
+import checkmark from './checkmark.svg'
+import checkmark1 from './checkmark1.svg'
+import checks from './checks.svg'
+import security from './security.svg'
 import arrow_icon from './arrow_icon.svg'
 import info_icon from './info_icon.svg'
 import upload_icon from './upload_icon.png'
@@ -47,6 +57,16 @@ export const assets = {
     logo,
     chats_icon,
     verified_icon,
+    thumb,
+    cancel,
+    cancelled,
+    cancelledd,
+    banking,
+    approve,
+    checkmark,
+    checkmark1,
+    checks,
+    security,
     info_icon,
     profile_pic,
     profile_pic_2,

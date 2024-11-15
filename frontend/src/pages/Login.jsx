@@ -15,8 +15,6 @@ const Login = () => {
   const [name, setName] = useState('');
 
   const navigate = useNavigate();
-
-
   const onSubmitHandler = async (event) => {
     event.preventDefault();
 
@@ -28,6 +26,7 @@ const Login = () => {
           localStorage.setItem('token',data.token);
           setToken(data.token);
           console.log("user token :", token);
+          toast.success(data.message);
           
         }else{
           toast.error(data.message);
@@ -37,6 +36,8 @@ const Login = () => {
         if (data.success) {
           localStorage.setItem('token',data.token);
           setToken(data.token);
+          toast.success(data.message);
+
         }else{
           toast.error(data.message);
         }

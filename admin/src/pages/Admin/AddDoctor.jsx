@@ -78,8 +78,6 @@ const AddDoctor = () => {
 
     }
 
-
-
   return (
     <form onSubmit={onSubmitHandler} className='m-5 w-full'>
         <p className='mb-3 text-lg font-medium'>Add Doctor</p>
@@ -88,7 +86,7 @@ const AddDoctor = () => {
             
             <div className='flex items-center gap-4 mb-8 text-gray-500'>
                 <label htmlFor="doc-img">
-                    <img className='w-16 bg-gray-100 rounded-full cursor-pointer' src={docImg ? URL.createObjectURL(docImg) : assets.upload_area} alt="" />
+                    <img className='w-16 bg-gray-100 rounded-full cursor-pointer hover:border' src={docImg ? URL.createObjectURL(docImg) : assets.upload_area} alt="" />
                 </label>
                 <input onChange={(e)=>setDocImg(e.target.files[0])} type="file" id='doc-img' hidden />
                 <p>Upload doctor <br /> picture</p>
@@ -169,7 +167,7 @@ const AddDoctor = () => {
                 <textarea onChange={(e)=>setAbout(e.target.value)} value={about} className='w-full px-4 pt-2 border rounded' placeholder='Write About Doctor...' rows={5} required />
             </div>
 
-            <button type='submit' className='mt-3 px-10 py-3 font-semibold text-white bg-primary border rounded-full hover:bg-blue-600 transition-all duration-200'>Add Doctor</button>
+            <button type='submit' className='mt-3 px-10 py-3 font-semibold text-white bg-primary border rounded-full hover:bg-gradient-to-r from-blue-500 to-blue-800 transition-all duration-500'>Add Doctor</button>
 
         </div>
     </form>
