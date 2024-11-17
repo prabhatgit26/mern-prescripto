@@ -52,15 +52,15 @@ const DoctorProfile = () => {
       <div className="flex flex-col sm:flex-row gap-8 bg-white shadow-2xl rounded-lg p-8 w-full max-w-4xl transform transition">
         
         {/* Doctor Image */}
-        <div className="flex-shrink-0 overflow-hidden rounded-lg">
-          <img className="w-full sm:w-64 h-64 object-cover bg-primary" src={profileData.image} alt={profileData.name} />
+        <div className="flex-shrink-0 overflow-hidden rounded-lg ">
+          <img className="w-full sm:w-64 h-64 object-cover bg-primary hover:scale-105 transition-all duration-1000 hover:bg-gradient-to-r from-indigo-600 to-blue-400" src={profileData.image} alt={profileData.name} />
         </div>
 
         {/* Doctor Details */}
         <div className="flex-1 border-l border-gray-200 pl-8">
           
           {/* Doctor Info */}
-          <h2 className="text-4xl font-extrabold text-blue-800 tracking-wide">{profileData.name}</h2>
+          <h2 className="text-4xl font-extrabold text-blue-800 tracking-wide  hover:scale-105 transition-all duration-1000 ">{profileData.name}</h2>
           <div className="flex items-center gap-2 mt-2 text-gray-600">
             <p className="text-lg font-medium text-gray-700">{profileData.degree} - {profileData.speciality}</p>
             <span className="px-3 py-1 text-xs font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-700 rounded-full shadow-md">{profileData.experience}</span>
@@ -70,6 +70,11 @@ const DoctorProfile = () => {
           <div className="mt-5">
             <h3 className="text-lg font-semibold text-blue-700 mb-2">About:</h3>
             <p className="text-gray-600 leading-relaxed">{profileData.about}</p>
+          </div>
+
+          <div className="mt-5">
+            <h3 className="text-lg font-semibold text-blue-700 mb-2">Email:</h3>
+            <p className="text-gray-600 leading-relaxed">{profileData.email}</p>
           </div>
 
           {/* Appointment Fees */}

@@ -106,11 +106,18 @@ const AllAppointments = () => {
             </p>
 
             <div className="flex justify-center items-center">
-              {item.cancelled ? (
+              {item.isCompleted ? (
                 <img
-                  className="w-8 cursor-pointer hover:scale-125 transition-all duration-500 hover:rotate-45"
+                  className="w-9 cursor-pointer hover:scale-125 transition-all duration-500"
+                  src={assets.checklist}
+                  alt=""
+                  title="Appointment Completed"
+                />
+              ) : item.cancelled ? (
+                <img
+                  className="w-8 hover:scale-150 transition-all duration-1000 cursor-pointer hover:rotate-45"
                   src={assets.cancelled}
-                  alt="Cancelled"
+                  alt=""
                   title="Appointment Cancelled"
                 />
               ) : (
@@ -118,7 +125,7 @@ const AllAppointments = () => {
                   onClick={() => adminCancelAppointment(item._id)}
                   className="w-8 cursor-pointer hover:scale-125 transition-all duration-500"
                   src={assets.cross}
-                  alt="Cancel"
+                  alt=""
                   title="Cancel Appointment"
                 />
               )}

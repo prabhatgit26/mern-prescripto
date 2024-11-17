@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center px-4 sm:px-10 border-b py-3 bg-white'>
       <div className='flex items-center gap-2 text-xs'>
-        <img className='w-36 sm:w-40 cursor-pointer ' src={assets.admin_logo} alt="" />
+        <img onClick={()=>navigate('/')} className='w-36 sm:w-40 cursor-pointer ' src={assets.admin_logo} alt="" />
         <p className='border px-2.5 py-0.5 rounded-full border-gray-500 bg-gradient-to-r from-blue-500 to-blue-600 text-white cursor-pointer'>{aToken ? 'Admin' : 'Doctor'}</p>
       </div>
       <button onClick={(logout)} className='bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm px-10 py-2 rounded-full hover:scale-105 transition-all duration-500 font-semibold'>Logout</button>

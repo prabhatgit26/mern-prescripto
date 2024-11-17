@@ -3,6 +3,7 @@ import { AdminContext } from '../context/AdminContext.jsx';
 import { DoctorContext } from '../context/DoctorContext.jsx';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -12,6 +13,8 @@ const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
@@ -74,7 +77,7 @@ const Login = () => {
             placeholder='*************'
           />
         </div>
-        <button className='w-full text-white bg-primary py-2 rounded-md text-base hover:bg-blue-600'>
+        <button onClick={()=>navigate('/')} className='w-full text-white bg-primary py-2 rounded-md text-base hover:bg-blue-600'>
           Login
         </button>
         {state === 'Admin' ? (
